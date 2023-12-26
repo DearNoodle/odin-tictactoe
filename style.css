@@ -1,0 +1,82 @@
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+button,
+input {
+    width: 200px;
+    box-sizing: border-box;
+}
+
+input {
+    text-align: center;
+}
+
+.user-data-module{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form.player-data {
+    display: grid;
+    height: 150px;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+form.player-data div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.game-module {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid-container {
+    display: grid;
+    width: 400px;
+    height: 400px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+    border: black solid 1px;
+}
+
+.grid-container > div{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: black solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+}
+
+.text-display {
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.hide {
+    display: none !important;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="user-data-module">
+        <form class="player-data">
+            <div>
+                <label for="p1-is-user">Select</label>
+                <button type="button" class="select-player p1" id="p1-is-user">User</button>
+                <div>
+                    <label for="p1-name">Name: </label>
+                    <input type="text" class="p1" id="p1-name" placeholder="Player 1" value="Player 1">
+                </div>
+            </div>
+            <div>
+                <label for="p2-is-user">Select</label>
+                <button type="button" class="select-player p2" id="p2-is-user">User</button>
+                <div>
+                    <label for="p2-name">Name: </label>
+                    <input type="text" class="p2" id="p2-name" placeholder="Player 2" value="Player 2">
+                </div>
+            </div>
+        </form>
+        <button type="button" class="start">Start Game</button>
+    </div>
+
+    <div class="game-module hide">
+        <div class="grid-container">
+            <div id="grid-0"></div>
+            <div id="grid-1"></div>
+            <div id="grid-2"></div>
+            <div id="grid-3"></div>
+            <div id="grid-4"></div>
+            <div id="grid-5"></div>
+            <div id="grid-6"></div>
+            <div id="grid-7"></div>
+            <div id="grid-8"></div>
+        </div>
+        <div class="text-display"></div>
+        <button type="button" class="restart">Restart</button>
+    </div>
+    
+
+    <script src="game.js"></script>
+</body>
+</html>
